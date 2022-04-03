@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:"Manrope", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(217, 19%, 35%);
+    background-color: hsl(210, 46%, 95%);
+}
+
+.main{
+    max-width: 70vw;
+    /* min-height: 20rem; */
+    display: flex;
+    justify-content:space-between;
+    box-shadow: 3px 3px 50px lightgray;
+    border-radius: 1rem;
+  
+}
+
+.image{
+background-image: url(../images/drawers.jpg);
+background-size: cover;
+background-position: center;
+flex-basis: 40%;
+border-radius: 1rem 0 0 1rem;
+}
+.content{
+    flex-basis:60%;
+    padding: 2.5rem;
+    background-color: white;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.content__title {
+    font-family:"Manrope";
+    margin-top: 0;
+}
+.content__description {
+    color: hsl(214, 17%, 51%) ;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.author__info *{
+    margin: 0;
+    
+  
+}
+
+.author__info__name{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.author__info__date{
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+.author__avatar{
+    max-width: 40px;
+    height: 100%;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: row;
+
+}
+.share{
+    position: relative;
+}
+
+
+
+.tooltip {
+    position: absolute;
+    top: -80px;
+    left:-5.7rem;
+    background-color:hsl(217, 19%, 35%);
+    padding: 1rem 2rem;
+    min-width: 13rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-radius: 0.5rem;
+    align-items: center ;
+    box-shadow: 3px 3px 20px grey;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .6s ease-in;
+}
+
+.tooltip.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tooltip::before{
+    position: absolute;
+    content: "";
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: inherit;
+    left: 50%;
+    transform: translate(-50%);
+    top: 2.5rem;
+    transform: rotate(45deg);
+
+ 
+}
+.tooltip__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tooltip__text{
+  color: lightgrey;
+  letter-spacing: 0.3rem;
+  font-size: 0.7rem;
+}
+.share__icon {
+    background-color: lightgray;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+    .image{
+        padding: 10rem;
+        border-radius: 1rem 1rem 0 0;
+    }
+    .content{
+        border-radius: 0 0 1rem 1rem  ;
+    }
+    }
+
