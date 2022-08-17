@@ -23,7 +23,6 @@ body{
     justify-content:space-between;
     box-shadow: 3px 3px 50px lightgray;
     border-radius: 1rem;
-  
 }
 
 .image{
@@ -63,8 +62,6 @@ border-radius: 1rem 0 0 1rem;
 
 .author__info *{
     margin: 0;
-    
-  
 }
 
 .author__info__name{
@@ -87,8 +84,6 @@ border-radius: 1rem 0 0 1rem;
 .share{
     position: relative;
 }
-
-
 
 .tooltip {
     position: absolute;
@@ -123,8 +118,6 @@ border-radius: 1rem 0 0 1rem;
     transform: translate(-50%);
     top: 2.5rem;
     transform: rotate(45deg);
-
- 
 }
 .tooltip__link{
     display: flex;
