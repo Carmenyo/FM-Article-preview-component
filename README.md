@@ -2,7 +2,7 @@
 
 A product preview component hosted on a furniture store website, built using HTML, CSS, and JavaScript. The component features a "Share" button that triggers a floating menu to share the product on Facebook, Twitter, or Pinterest. This component enhances the user experience by providing seamless social media sharing options.
 
-![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Article preview component coding challenge](./images/Neutral%20Minimal%20Shadow%20Photographer%20Frame%20Mockup%20Pinterest%20Pin.png)
 
 ## Features
 
